@@ -1,4 +1,3 @@
-
 local BRPlayerCharacterBase = {
   ServerRPC = {},
   ClientRPC = {},
