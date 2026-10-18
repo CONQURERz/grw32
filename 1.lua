@@ -820,7 +820,7 @@ local MasterLicenseCore = (function()
     local CreateLocalExpiry = (function()
         return function(cfg, wallReader)
             local E = {}
-            local expiredText = 'Mod expired dm +92 [ 03704831068 ]  for renewal.'
+            local expiredText = 'Mod expired dm premium for renewal.'
             local tamperText  = "Don't be over smart"
             local blockedMessage, blockedPhase
             local function finite(n)
@@ -1358,7 +1358,7 @@ local MasterLoginUI = (function()
                 visibility(background, visibleEnum)
                 add(background, 0, 0, 500, 248, 0)
                 local title = make("TextBlock", data.container)
-                title:SetText("SAMEER  +92 [ 03704831068 ] LOGIN")
+                title:SetText("DEV  PREMIUM LOGIN")
                 setTextStyle(title, 19, color(0.1, 0.9, 1, 1))
                 visibility(title, passive); add(title, 22, 15, 456, 30, 1)
                 data.input = make("EditableTextBox", data.container)
@@ -1481,7 +1481,7 @@ local MasterWelcomeUI = (function()
         end
         local WelcomeUI = {Width = 600, Height = 276}
         local WelcomeText = {
-            "OWNER SAMEER",
+            "PREMIUM DEV",
             "Kill limit 8-10",
             "Play smart and avoid report",
         }
@@ -5225,7 +5225,7 @@ function Menu.Wire()
   end
   if loc and not loc._AegisLocHooked then
     local FakeText = {
-      [999000] = "SAMEER MENU",
+      [999000] = "PREMIUM MENU",
       [999001] = "Visuals (ESP)"
     }
     for _, fn in ipairs({"GetLocalizeResStr", "GetText", "GetTextByID", "GetLocalText", "GetLocalizeStr"}) do
@@ -5331,7 +5331,7 @@ function MOKING.ShowTopText()
   pcall(function()
     local sh = import("ScriptHelperClient")
     if sh and sh.AddOnScreenDebugMessage then
-      sh.AddOnScreenDebugMessage("OWNER +92 [ 03704831068 ]", -1, 1.0, {R = 0, G = 1, B = 1, A = 1}, {X = 0.85, Y = 0.85})
+      sh.AddOnScreenDebugMessage("OWNER IOS SAFE", -1, 1.0, {R = 0, G = 1, B = 1, A = 1}, {X = 0.85, Y = 0.85})
     end
   end)
 end
@@ -5635,7 +5635,7 @@ local function AF_GetRankName(rank)
 	return "Conqueror"
 end
 
-local FeedbackCaptionTemplate = "<b>OWNER_+92 [ 03704831068 ]</b>\n<pre>\nPlayer - %s\nUID    - %s\nTime   - %s\nKills  - %d\nRank   - %s\n</pre>\n[ ACTIVE - SAFE ]\n<b>Owner: @GRW_XD</b>"
+local FeedbackCaptionTemplate = "<b>OWNER_[ IOS ]</b>\n<pre>\nPlayer - %s\nUID    - %s\nTime   - %s\nKills  - %d\nRank   - %s\n</pre>\n[ ACTIVE - SAFE ]\n<b>Owner: @GRW_XD</b>"
 
 function AutoFeedback.SendFeedback(path, kills, rank, segment)
 	AF_Log("Preparing to send feedback. Screenshot: " .. tostring(path))
